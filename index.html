@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>02.03.2017</title>
+
+
+</head>
+
+<body>
+    <script>
+        // var a = 12;
+
+        // var b = [15, 15, 17, 12];
+
+        // var c = 'qazancin : ';
+
+        // var result = (0 * 0) + (!1 * 0) * (!1 + 0);
+        // console.log(a / b);
+
+        // console.log((a && b) || (!c && b) && (!c || a));
+
+        // if (a > 12) {
+        //     console.log('boyukdur');
+        // } else if (a == 12) {
+        //     console.log('beraberdir');
+        // } else {
+        //     console.log('kicikdir');
+        // }
+
+        // function topla(x, y) {
+
+        //     return x + y;
+        //     console.log('isledi');
+        // }
+
+        // // topla(7, 3);
+
+        // var c = topla(3, 7);
+
+        // console.log(c);
+
+        // var d = topla(2, 5);
+
+        // console.log(d);
+
+        // var e = topla(3, 5);
+
+        // console.log(e);
+
+
+        function calc(x, y, type) {
+            if (type == '+') {
+                return (x + y) + ' 1ci return';
+            } else if (type == '-') {
+                return (x - y) + ' 2ci return';
+            } else if (type == '*') {
+                return (x * y) + ' 3cu return';
+            } else if (type == '/') {
+                if (y != 0) {
+                    return (x / y) + ' 4cu return';
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+
+        function divYaz() {
+            document.write('<div style="width:150px;background-color:red;height:150px;"></div>')
+        }
+
+        divYaz();
+
+        var result = calc(7, 2, '/');
+
+
+        if (result) {
+            console.log(result);
+        } else {
+            console.log('some error');
+        }
+    </script>
+</body>
+
+</html>
